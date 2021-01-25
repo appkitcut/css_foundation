@@ -1,0 +1,215 @@
+
+$base_color:(
+	bg:(
+		bg_btn:#DDD,
+		bg_input:#FFF,
+		bg_disabled:#DFDFDF,
+	),
+	txt:(
+		txx_txt:#333,
+		txt_link:#1a73e8,
+		txt_input:#a5a5a5,
+		txt_placeholder:#d3d3d3,
+		txt_button:#333333,
+		txt_disabled:#A8A8A8,
+	),
+	border:(
+		border_input:#a5a5a5,
+		border_focus:#80bdff,
+		border_box:#a5a5a5,
+		border_disabled:#DFDFDF,
+	),
+	shadow:(
+
+	),
+);
+
+$base_txt:(
+
+	fs:(
+		sm:1.4rem,
+		md:1.6rem,
+		lg:1.8rem,		
+	),
+	lh:(
+		xs: 1,
+		sm: 1.25,
+		md: 1.35,
+		lg: 1.5,
+		hg: 1.8,
+	),
+	ls:(
+		sm:.01em,
+		md:.02em,
+		lg:.03em,
+	),
+);
+
+$base_shape:(
+	radius:(
+		sm: 2px,
+		md:4px,
+		lg:6px,
+		hg:8px,
+	),
+	padding:(
+		padding_btn:0.375em 0.75em,
+		padding_input:0.375em 0.75em,
+	),
+);
+
+
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: "ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック体","Yu Gothic",YuGothic,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	position: relative;
+	font-size: map-get(map-get($base_txt , fs ), md);
+	color: 	   map-ge(map-get($base_color, txt), txt_txt );
+	line-height: map-get(map-get($base_txt , lh ), lg);
+}
+
+img{
+	max-width: 100%;
+}
+
+figure{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+table{
+	width: 100%;
+
+	td,th{
+
+	}
+	
+}
+
+
+input,
+textarea,
+select{
+	font-size: map-get(map-get($base_txt , fs), md);
+	border-radius: map-get(map-get($base_shape , radius ), md);
+}
+
+a{
+	color: map-get(map-get($base_color, txt), txt_link);
+
+	&:hover{
+
+	}
+	&:visited{
+		
+	}
+	&:active{
+		
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	background-color: map-get(map-get($base_color,bg) , bg_btn );
+	padding: map-get(map-get($base_shape,padding) , padding_input );
+	border: 1px solid transparent;
+	border-radius: map-get(map-get($base_shape , radius ), md);
+
+	&:focus{
+		border: 1px solid;
+		border-color: map-get(map-get($base_color , border ),border_focus);
+		box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+	}
+}
+
+
+textarea,
+[type="text"],
+[type="number"],
+[type="password"],
+[type="url"],
+[type="date"],
+[type="email"]{
+	border: 1px solid;
+	border-color:map-get( map-get($base_color, border),border_input );
+	width: 100%;
+	padding: map-get(map-get($base_shape,padding) , padding_input );
+
+	&:focus{
+		border-color:map-get( map-get($base_color, border),border_focus);
+		box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+	}
+}
+
+input[type='text']{
+	-webkit-tap-highlight-color : rgba(0,0,0,0);
+}
+
+textarea{
+	resize: vertical;
+}
+
+select{
+
+	&:focus{
+		outline: none;
+	}
+}
+
+// PLACEHOLDER 統合しない
+// ---------------------------------------------------------------
+input::-webkit-input-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+input::-moz-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+input:-ms-input-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+::-webkit-input-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+/* Firefox 4-18 */
+:-moz-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+/* Firefox 19-50 */
+::-moz-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+/* - Internet Explorer 10–11
+   - Internet Explorer Mobile 10-11 */
+:-ms-input-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+/* Edge (also supports ::-webkit-input-placeholder) */
+::-ms-input-placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+/* CSS Pseudo-Elements Level 4 Editor's Draft */
+::placeholder {
+	color: map-get(map-get($base_color , txt), txt_placeholder ) ;
+}
+
+
+
+// disabled
+// ---------------------------------------------------------------
+.is-disabled {
+	pointer-events: none;
+	// cursor: not-allowed;
+	// color: $color_disabled_txt !important;
+	background-color: map-get(map-get($base_color , bg ), bg_disabled) !important;
+}
+
+
+
+
