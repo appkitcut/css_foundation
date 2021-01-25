@@ -1,0 +1,58 @@
+@charset "UTF-8";
+html { font-size: 62.5%; }
+
+body { font-family: "ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック体","Yu Gothic",YuGothic,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; position: relative; font-size: 1.6rem; color: map-ge((txx_txt: #333, txt_link: #1a73e8, txt_input: #a5a5a5, txt_placeholder: #d3d3d3, txt_button: #333333, txt_disabled: #A8A8A8), txt_txt); line-height: 1.5; }
+
+img { max-width: 100%; }
+
+figure img { width: 100%; height: auto; }
+
+table { width: 100%; }
+
+input, textarea, select { font-size: 1.6rem; border-radius: 4px; }
+
+a { color: #1a73e8; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { display: inline-block; background-color: #DDD; padding: 0.375em 0.75em; border: 1px solid transparent; border-radius: 4px; }
+
+button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus { border: 1px solid; border-color: #80bdff; -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); }
+
+textarea, [type="text"], [type="number"], [type="password"], [type="url"], [type="date"], [type="email"] { border: 1px solid; border-color: #a5a5a5; width: 100%; padding: 0.375em 0.75em; }
+
+textarea:focus, [type="text"]:focus, [type="number"]:focus, [type="password"]:focus, [type="url"]:focus, [type="date"]:focus, [type="email"]:focus { border-color: #80bdff; -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); }
+
+input[type='text'] { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+textarea { resize: vertical; }
+
+select:focus { outline: none; }
+
+input::-webkit-input-placeholder { color: #d3d3d3; }
+
+input::-moz-placeholder { color: #d3d3d3; }
+
+input:-ms-input-placeholder { color: #d3d3d3; }
+
+::-webkit-input-placeholder { color: #d3d3d3; }
+
+/* Firefox 4-18 */
+:-moz-placeholder { color: #d3d3d3; }
+
+/* Firefox 19-50 */
+::-moz-placeholder { color: #d3d3d3; }
+
+/* - Internet Explorer 10–11 - Internet Explorer Mobile 10-11 */
+:-ms-input-placeholder { color: #d3d3d3; }
+
+/* Edge (also supports ::-webkit-input-placeholder) */
+::-ms-input-placeholder { color: #d3d3d3; }
+
+/* CSS Pseudo-Elements Level 4 Editor's Draft */
+::-webkit-input-placeholder { color: #d3d3d3; }
+::-moz-placeholder { color: #d3d3d3; }
+:-ms-input-placeholder { color: #d3d3d3; }
+::-ms-input-placeholder { color: #d3d3d3; }
+::placeholder { color: #d3d3d3; }
+
+.is-disabled { pointer-events: none; background-color: #DFDFDF !important; }
+/*# sourceMappingURL=map/destyle_add.css.map */
