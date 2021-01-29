@@ -1,0 +1,60 @@
+$base_color:(
+	bg:(
+		bg_btn:#DDD,
+		bg_input:#FFF,
+		bg_disabled:#DFDFDF,
+	),
+	txt:(
+		txx_txt:#333,
+		txt_link:#1a73e8,
+		txt_input:#a5a5a5,
+		txt_placeholder:#d3d3d3,
+		txt_button:#333333,
+		txt_disabled:#A8A8A8,
+	),
+	border:(
+		border_input:#a5a5a5,
+		border_focus:#80bdff,
+		border_box:#a5a5a5,
+		border_disabled:#DFDFDF,
+	),
+	shadow:(
+
+	),
+);
+
+$base_txt:(
+
+	fs:(
+		sm: 1.4rem,
+		md: 1.6rem,
+		lg: 1.8rem,		
+	),
+	lh:(
+		xs: 1,
+		sm: 1.25,
+		md: 1.35,
+		lg: 1.5,
+		xl: 1.8,
+		hg: 2
+	),
+	ls:(
+		sm:.01em,
+		md:.02em,
+		lg:.03em,
+	),
+);
+
+$base_shape:(
+	radius:(
+		sm: 2px,
+		md: 4px,
+		lg: 6px,
+		hg: 8px,
+	),
+	padding:(
+		padding_btn: 0.5em 0.5em,
+		padding_input: 0.5em 0.5em,
+	),
+);
+

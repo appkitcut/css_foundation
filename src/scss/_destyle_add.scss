@@ -27,16 +27,17 @@ $base_color:(
 $base_txt:(
 
 	fs:(
-		sm:1.4rem,
-		md:1.6rem,
-		lg:1.8rem,		
+		sm: 1.4rem,
+		md: 1.6rem,
+		lg: 1.8rem,		
 	),
 	lh:(
 		xs: 1,
 		sm: 1.25,
 		md: 1.35,
 		lg: 1.5,
-		hg: 1.8,
+		xl: 1.8,
+		hg: 2
 	),
 	ls:(
 		sm:.01em,
@@ -48,9 +49,9 @@ $base_txt:(
 $base_shape:(
 	radius:(
 		sm: 2px,
-		md:4px,
-		lg:6px,
-		hg:8px,
+		md: 4px,
+		lg: 6px,
+		hg: 8px,
 	),
 	padding:(
 		padding_btn:0.375em 0.75em,
@@ -118,7 +119,7 @@ input[type="reset"],
 input[type="submit"] {
 	display: inline-block;
 	background-color: map-get(map-get($base_color,bg) , bg_btn );
-	padding: map-get(map-get($base_shape,padding) , padding_input );
+	padding: map-get(map-get($base_shape,padding) , padding_btn );
 	border: 1px solid transparent;
 	border-radius: map-get(map-get($base_shape , radius ), md);
 

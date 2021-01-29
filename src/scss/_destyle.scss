@@ -1,5 +1,5 @@
 /*! destyle.css v1.0.7 | MIT License | https://github.com/nicolas-cusan/destyle.css */
-
+/*! ブラウザ間の差を無くすためのスタイルに留める */
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ body {
 
 
 main {
-  display: block;
+  display: block; // 
 }
 
 
@@ -93,6 +93,7 @@ a {
   background-color: transparent;
   text-decoration: none;
   color: inherit;
+	color: map-get(map-get($base_color, txt), txt_link);
 }
 
 
@@ -169,6 +170,40 @@ textarea {
   border-radius: 0;
   text-align: inherit;
 }
+
+
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	background-color: map-get(map-get($base_color,bg) , bg_btn );
+	padding: map-get(map-get($base_shape, padding) , padding_btn );
+
+	&:focus{
+
+  }
+}
+
+textarea,
+[type="text"],
+[type="number"],
+[type="password"],
+[type="url"],
+[type="date"],
+[type="email"]{
+	border: 1px solid;
+	border-color:map-get( map-get($base_color, border),border_input );
+	padding: map-get(map-get($base_shape, padding) , padding_input );
+  width: 100%;
+
+	&:focus{
+
+  }
+}
+
+
 
 [type='checkbox'] {
   -webkit-appearance: checkbox;
@@ -337,19 +372,3 @@ template {
   display: none;
 }
 
-
-
-// NARROW
-@media screen and (max-width:768px){
-  .dev_container{
-    width: 100%;
-    margin:0 auto;
-  }
-}
-// WIDE
-@media screen and (min-width:769px){
-  .dev_container{
-    width: 600px;
-    margin:0 auto;
-  }
-}
