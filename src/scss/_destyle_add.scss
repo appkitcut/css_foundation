@@ -207,7 +207,7 @@ input:-ms-input-placeholder {
 .is-disabled {
 	pointer-events: none;
 	// cursor: not-allowed;
-	// color: $color_disabled_txt !important;
+	// color: map-get(map-get($base_color , txt ), txt_disabled) !important;
 	background-color: map-get(map-get($base_color , bg ), bg_disabled) !important;
 }
 
