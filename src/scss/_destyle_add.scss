@@ -64,11 +64,12 @@ html{
 	font-size: 62.5%;
 }
 body{
-	font-family: "ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック体","Yu Gothic",YuGothic,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+	// font-family: "ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック体","Yu Gothic",YuGothic,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
 	position: relative;
 	font-size: map-get(map-get($base_txt , fs ), md);
 	color: 	   map-ge(map-get($base_color, txt), txt_txt );
 	line-height: map-get(map-get($base_txt , lh ), lg);
+	@include fontfamily();
 }
 
 img{
@@ -220,3 +221,7 @@ input:-ms-input-placeholder {
 
 
 
+[data-icon]::before,
+[data-icon]::after{
+	@include fontfamily_icon();
+}

@@ -58,3 +58,67 @@ $base_shape:(
 	),
 );
 
+$container: (
+	thin_1: 740px,
+	thin_2: 740px,
+	base: 980px,
+	wide: 1200px,
+	full: 100%,
+) !default;
+
+$contents: (
+	main: 800px,
+	sub: 300px,
+	single: 800px,
+) !default;
+
+
+$points: (
+	xs: 320px, // iPhone5
+	sm: 375px, // iPhone6
+	md: 640px,
+	lg: 980px,
+	xl: 1200px, // ほぼ使わない
+) !default;
+
+
+// DEFINE
+$break_points: (
+	min_xs: 'screen and (min-width: #{ map-get($points, xs) })',
+	min_sm: 'screen and (min-width: #{ map-get($points, sm) })',
+	min_md: 'screen and (min-width: #{ map-get($points, md) })',
+	min_lg: 'screen and (min-width: #{ map-get($points, lg) })',
+	min_xl: 'screen and (min-width: #{ map-get($points, xl) })',
+
+	max_xs: 'not all and (min-width: #{ map-get($points, xs) })',
+	max_sm: 'not all and (min-width: #{ map-get($points, sm) })',
+	max_md: 'not all and (min-width: #{ map-get($points, md) })',
+	max_lg: 'not all and (min-width: #{ map-get($points, lg) })',
+	max_xl: 'not all and (min-width: #{ map-get($points, xl) })',
+) !default;
+
+
+$fontfamilys: (
+	default: '"ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif',
+	number: 'Verdana, Geneva, sans-serif',
+	english: 'Verdana, Geneva, sans-serif',
+	noto: '"NotoSansCJKjp" sans-serif',
+	icon: 'icomoon !important',
+	blog: '"Helvetica", "Arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", YuGothic, "Yu Gothic", "メイリオ", Meiryo, sans-serif'
+) !default;
+
+
+$iconfonts: (
+	default: '"FontAwesome" !important',
+	icomoon: '"icomoon" !important',
+) !default;
+
+@mixin fontfamily($font:default) {
+	font-family: #{ map-get($fontfamilys, $font) } ;
+}
+  
+  
+@mixin fontfamily_icon($icon:default) {
+	font-family: #{ map-get($iconfonts, $icon) } ;
+	speak: none;
+}

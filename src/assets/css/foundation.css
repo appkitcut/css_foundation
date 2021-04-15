@@ -117,7 +117,7 @@ template { display: none; }
 
 html { font-size: 62.5%; }
 
-body { font-family: "ヒラギノ角ゴシック Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"游ゴシック体","Yu Gothic",YuGothic,"ＭＳ Ｐゴシック","MS PGothic",sans-serif; position: relative; font-size: 1.6rem; color: map-ge((txx_txt: #333, txt_link: #1a73e8, txt_input: #a5a5a5, txt_placeholder: #d3d3d3, txt_button: #333333, txt_disabled: #A8A8A8), txt_txt); line-height: 1.5; }
+body { position: relative; font-size: 1.6rem; color: map-ge((txx_txt: #333, txt_link: #1a73e8, txt_input: #a5a5a5, txt_placeholder: #d3d3d3, txt_button: #333333, txt_disabled: #A8A8A8), txt_txt); line-height: 1.5; font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
 
 img { max-width: 100%; }
 
@@ -173,4 +173,6 @@ input:-ms-input-placeholder { color: #d3d3d3; }
 ::placeholder { color: #d3d3d3; }
 
 .is-disabled { pointer-events: none; background-color: #DFDFDF !important; }
+
+[data-icon]::before, [data-icon]::after { font-family: "FontAwesome" !important; speak: none; }
 /*# sourceMappingURL=map/foundation.css.map */
