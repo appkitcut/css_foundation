@@ -175,4 +175,3 @@ input:-ms-input-placeholder { color: #d3d3d3; }
 .is-disabled { pointer-events: none; background-color: #DFDFDF !important; }
 
 [data-icon]::before, [data-icon]::after { font-family: "FontAwesome" !important; speak: none; }
-/*# sourceMappingURL=map/foundation.css.map */

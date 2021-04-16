@@ -127,7 +127,7 @@ const compileSass = () =>
 )
 // .pipe(cleanCss())
 .pipe(dest(paths.styles.dest,{
-  sourcemaps: paths.styles.map
+  // sourcemaps: paths.styles.map
 }));
 
 
