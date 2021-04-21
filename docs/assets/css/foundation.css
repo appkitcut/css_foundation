@@ -49,9 +49,9 @@ embed, object, iframe { border: 0; vertical-align: bottom; }
 
 button, input, optgroup, select, textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; vertical-align: middle; color: inherit; font: inherit; border: inherit; background: transparent; padding: 0; margin: 0; outline: 0; border-radius: 0; text-align: inherit; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { display: inline-block; background-color: #DDD; padding: 0.5em 0.5em; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { display: inline-block; background-color: #DDD; padding: 0.25em 0.25em; }
 
-textarea, [type="text"], [type="number"], [type="password"], [type="url"], [type="date"], [type="email"] { border: 1px solid; border-color: #a5a5a5; padding: 0.5em 0.5em; width: 100%; }
+textarea, [type="text"], [type="number"], [type="password"], [type="url"], [type="date"], [type="email"] { border: 1px solid; border-color: #a5a5a5; padding: 0.25em 0.25em; width: 100%; }
 
 [type='checkbox'] { -webkit-appearance: checkbox; -moz-appearance: checkbox; appearance: checkbox; }
 
@@ -119,11 +119,7 @@ html { font-size: 62.5%; }
 
 body { position: relative; font-size: 1.6rem; color: map-ge((txx_txt: #333, txt_link: #1a73e8, txt_input: #a5a5a5, txt_placeholder: #d3d3d3, txt_button: #333333, txt_disabled: #A8A8A8), txt_txt); line-height: 1.5; font-family: "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "游ゴシック体", "Yu Gothic", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
 
-img { max-width: 100%; }
-
-svg { max-width: 100%; height: auto; vertical-align: bottom; }
-
-figure img { width: 100%; height: auto; }
+img, svg { max-width: 100%; border-style: none; vertical-align: bottom; height: auto; }
 
 table { width: 100%; }
 
@@ -131,7 +127,7 @@ input, textarea, select { font-size: 1.6rem; border-radius: 4px; }
 
 a { color: #1a73e8; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] { display: inline-block; background-color: #DDD; padding: 0.375em 0.75em; border: 1px solid transparent; border-radius: 4px; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { display: inline-block; border: 1px solid transparent; }
 
 button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus { border: 1px solid; border-color: #80bdff; -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25); }
 

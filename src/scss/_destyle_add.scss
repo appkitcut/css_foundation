@@ -72,22 +72,20 @@ body{
 	@include fontfamily();
 }
 
-img{
+img,svg{
 	max-width: 100%;
-}
-
-svg{
-	max-width: 100%;
-	height: auto;
+	border-style: none;
 	vertical-align: bottom;
+	height: auto;
 }
 
 figure{
+
 	img{
-		width: 100%;
-		height: auto;
+
 	}
 }
+
 
 table{
 	width: 100%;
@@ -125,10 +123,10 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	display: inline-block;
-	background-color: map-get(map-get($base_color,bg) , bg_btn );
-	padding: map-get(map-get($base_shape,padding) , padding_btn );
+	// background-color: map-get(map-get($base_color,bg) , bg_btn );
+	// padding: map-get(map-get($base_shape,padding) , padding_btn );
 	border: 1px solid transparent;
-	border-radius: map-get(map-get($base_shape , radius ), md);
+	// border-radius: map-get(map-get($base_shape , radius ), md);
 
 	&:focus{
 		border: 1px solid;
