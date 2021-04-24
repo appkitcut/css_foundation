@@ -129,9 +129,9 @@ input[type="submit"] {
 	// border-radius: map-get(map-get($base_shape , radius ), md);
 
 	&:focus{
-		border: 1px solid;
-		border-color: map-get(map-get($base_color , border ),border_focus);
-		box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+		// border: 1px solid;
+		// border-color: map-get(map-get($base_color , border ),border_focus);
+		// box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
 	}
 }
 
